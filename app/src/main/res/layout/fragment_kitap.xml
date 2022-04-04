@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="kitap"
+            type="kz.nrgteam.leetread.dto.kitaphana.Book" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.kitap.KitapFragment">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nested_scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="16dp"
+                    android:paddingBottom="18dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/book_image_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/background_color"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="130dp"
+                            android:layout_height="200dp"
+                            android:layout_margin="1dp"
+                            android:layout_marginTop="16dp"
+                            android:backgroundTint="@color/background_color"
+                            app:cardCornerRadius="2dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/book_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                tools:ignore="ContentDescription" />
+
+                        </androidx.cardview.widget.CardView>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/book_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:text="@{kitap.title}"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@id/book_image_card"
+                        app:layout_constraintTop_toTopOf="@id/book_image_card"
+                        tools:text="Табысқа жету жолдары" />
+
+                    <TextView
+                        android:id="@+id/book_author"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:textColor="@color/text_color"
+                        app:layout_constraintStart_toEndOf="@id/book_image_card"
+                        app:layout_constraintTop_toBottomOf="@id/book_name"
+                        tools:text="Асқарбек Азатов" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/readers_recyclerview_daily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/background_color"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        app:layout_constraintBottom_toTopOf="@id/hor_progress_bar"
+                        app:layout_constraintStart_toEndOf="@id/book_image_card"
+                        tools:itemCount="3"
+                        tools:listitem="@layout/item_user_reader" />
+
+                    <TextView
+                        android:id="@+id/leftover_people_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="және 49 досым оқуда"
+                        android:textSize="12sp"
+                        android:translationX="-35dp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="@id/readers_recyclerview_daily"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/readers_recyclerview_daily" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/change_buttons_card_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="5dp"
+                        app:layout_constraintBottom_toTopOf="@id/hor_progress_bar"
+                        app:layout_constraintEnd_toEndOf="@+id/hor_progress_bar"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        android:layout_marginHorizontal="2dp"
+                        app:layout_constraintStart_toEndOf="@+id/book_image_card"
+                        app:layout_constraintStart_toStartOf="@+id/hor_progress_bar">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <TextView
+                                android:id="@+id/minus_btn"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="0dp"
+                                android:textColor="@color/second_text_color"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:clickable="true"
+                                android:backgroundTint="@color/primaryColor"
+                                android:focusable="true"
+                                android:gravity="center"
+                                android:text="@string/minus"
+                                android:textSize="30sp" />
+
+                            <EditText
+                                android:id="@+id/page_edit_text"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_weight="3"
+                                android:background="@android:color/transparent"
+                                android:digits="0123456789"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:gravity="center"
+                                android:hint="@string/read_page_edit_hint"
+                                android:inputType="numberDecimal"
+                                android:textSize="20sp"
+                                tools:ignore="Autofill" />
+
+                            <TextView
+                                android:id="@+id/plus_btn"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:gravity="center"
+                                android:textColor="@color/second_text_color"
+                                android:paddingEnd="5dp"
+                                android:paddingStart="0dp"
+                                android:text="@string/plus"
+                                android:textSize="30sp" />
+
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <ProgressBar
+                        android:id="@+id/hor_progress_bar"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="4dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginBottom="6dp"
+                        android:indeterminate="false"
+                        android:progressDrawable="@drawable/progress_bar_background"
+                        app:layout_constraintBottom_toTopOf="@id/rating"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/book_image_card" />
+
+                    <RatingBar
+                        android:id="@+id/rating"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:stepSize="0.1"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="@id/book_image_card"
+                        app:layout_constraintStart_toEndOf="@id/book_image_card" />
+
+                    <TextView
+                        android:id="@+id/voted_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="45"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="@id/rating"
+                        app:layout_constraintStart_toEndOf="@id/rating"
+                        app:layout_constraintTop_toTopOf="@id/rating"
+                        tools:text="(45)" />
+
+                    <Button
+                        android:id="@+id/read_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:backgroundTint="@color/primaryColor"
+                        android:text="Оқу"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/book_image_card" />
+
+                    <TextView
+                        android:id="@+id/des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="23dp"
+                        android:text="Сипаттама"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/read_btn" />
+
+                    <TextView
+                        android:id="@+id/book_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:textColor="@color/text_color"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/des"
+                        tools:text="Сол заманда-ақ надандар шырыш бұзған, Жалғанның дәмін бұзып,хауіп қылғызған. Ақыл мен мал екеуін асырай алмай,Арашаны іздепті қатын,қыздан. Ендігіге не сұрау бұл заманда Сол заманда-ақ надандар шырышбұзған, Жалғанның дәмін бұзып, хауіп қылғызған. Ақыл мен мал екеуінасырай алмай, Арашаны іздепті қатын, қыздан. Ендігіге не сұрау бұлзаманда Сол заманда-ақ надандар шырыш бұзған" />
+
+                    <View
+                        android:id="@+id/line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="25dp"
+                        android:background="@color/default_color"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/book_description" />
+
+                    <TextView
+                        android:id="@+id/com"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="23dp"
+                        android:text="Пікірлер"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/line" />
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/comment_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/com">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/image_card_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="25dp"
+                            app:cardElevation="0dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_margin="1dp"
+                                android:layout_marginBottom="15dp"
+                                app:cardCornerRadius="25dp">
+
+                                <ImageView
+                                    android:id="@+id/user_item_image"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    tools:ignore="ContentDescription" />
+
+                            </androidx.cardview.widget.CardView>
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:text="Айдос Ақтанберді"
+                            android:textColor="@color/text_color"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@id/image_card_view"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Толығырақ"
+                            android:textColor="@color/primaryColor"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <RatingBar
+                            android:id="@+id/user_rating"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:stepSize="0.1"
+                            app:layout_constraintStart_toEndOf="@id/image_card_view"
+                            app:layout_constraintTop_toBottomOf="@id/user_name" />
+
+                        <TextView
+                            android:id="@+id/comment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="Сол заманда-ақ надандар шырыш бұзған, Жалғанның дәмінбұзып, хауіп қылғызған. Ақыл мен мал екеуін асырай алмай, Сол заманда-ақнадандар шырыш бұзған, Жалғанның дәмін бұзып, хауіп қылғызған. Ақыл менмал екеуін асырай алмай..."
+                            android:textColor="@color/text_color"
+                            app:layout_constraintTop_toBottomOf="@id/image_card_view" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/quote_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/comment_container">
+
+                        <TextView
+                            android:id="@+id/quote"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="23dp"
+                            android:text="Цитаталар"
+                            android:textColor="@color/text_color"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="23dp"
+                            android:text="Толығырақ"
+                            android:textColor="@color/primaryColor"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/quote"
+                            android:layout_marginTop="9dp"
+                            android:text="Сол заманда-ақ надандар шырыш бұзған, Жалғанның дәмін бұзып, хауіп қылғызған. Ақыл мен мал екеуін асырай алмай, Сол заманда-ақ надандар шырыш бұзған, Жалғанның дәмін бұзып, хауіп қылғызған. Ақыл мен малекеуін асырай алмай.."
+                            android:textColor="@color/text_color" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/react"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="46dp"
+                        android:text="Пікір қалдыру"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/quote_container" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/leaving_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:background="@drawable/edit_text_border"
+                        android:gravity="top|start"
+                        android:hint="Керемет"
+                        android:minLines="3"
+                        android:paddingStart="4dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="4dp"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/react" />
+
+                    <RatingBar
+                        android:id="@+id/your_rating"
+                        style="?android:attr/ratingBarStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:stepSize="0.1"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/leaving_comment" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:backgroundTint="@color/primaryColor"
+                        android:paddingVertical="18dp"
+                        android:text="Жіберу"
+                        android:textColor="@color/white"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="@id/your_rating"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/your_rating"
+                        app:layout_constraintTop_toTopOf="@id/your_rating" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.core.widget.NestedScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/retry_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/retry"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</layout>

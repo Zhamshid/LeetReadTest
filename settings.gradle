@@ -1,0 +1,2 @@
+rootProject.name = "LeetRead"
+include ':app'

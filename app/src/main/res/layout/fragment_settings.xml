@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.settings.SettingsFragment">
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="28dp"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/account"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            app:drawableStartCompat="@drawable/ic_person" />
+
+        <TextView
+            android:id="@+id/notifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="28dp"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/notifications"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            app:drawableStartCompat="@drawable/ic_bell" />
+
+        <TextView
+            android:id="@+id/privacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="28dp"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/privacy"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            app:drawableStartCompat="@drawable/ic_lock" />
+
+        <TextView
+            android:id="@+id/security"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="28dp"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/security"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            app:drawableStartCompat="@drawable/ic_shield" />
+
+        <TextView
+            android:id="@+id/about_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="28dp"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/about_app"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            app:drawableStartCompat="@drawable/ic_alert_circle" />
+
+        <TextView
+            android:id="@+id/faq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="28dp"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/faq"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            app:drawableStartCompat="@drawable/ic_alert_octagon" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="@dimen/layout_vertical_margin"
+            android:background="@color/divider" />
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/layout_horizontal_margin"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="@string/logout"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
+    </LinearLayout>
+</layout>

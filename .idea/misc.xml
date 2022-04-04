@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/background_tab_layout_text_selected.xml" value="0.10520833333333333" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/bottom_navigation_item_background_color.xml" value="0.10520833333333333" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/button_background_blue.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/button_background_blue_default.xml" value="0.10520833333333333" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/button_background_blue_pressed.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/circular.xml" value="0.10520833333333333" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/divider.xml" value="0.111" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/edit_text_border.xml" value="0.1525" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/ic_arrow_right.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/ic_back.xml" value="0.2145" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/ic_key.xml" value="0.1735" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/ic_launcher.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2324074074074074" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.13177083333333334" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/ic_menu.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/ic_pencil_line.xml" value="0.111" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/ic_profile_follow_with_backg.xml" value="0.10520833333333333" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/ic_save.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/ic_settings.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/ic_shape_heart.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/ic_splash.xml" value="0.22962962962962963" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/ic_user_rank_gold.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/item_statistics_background.xml" value="0.111" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/progress_bar_background.xml" value="0.10520833333333333" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/radius_only_top.xml" value="0.111" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/round_border_little.xml" value="0.1525" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/round_for_day_cell.xml" value="0.10520833333333333" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/drawable/splash_image.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout-v23/fragment_profile.xml" value="0.10833333333333334" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/activity_login.xml" value="0.18274111675126903" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/activity_main.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/activity_splash.xml" value="0.21240942028985507" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/dialog_change_annual_read_page.xml" value="0.18020833333333333" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/dialog_change_read.xml" value="0.14583333333333334" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/fragment_all_books.xml" value="0.1585144927536232" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/fragment_change_annual_goal.xml" value="0.1585144927536232" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/fragment_change_password.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/fragment_change_read_dialog.xml" value="0.1" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/fragment_followers_list.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/fragment_forgot_password.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/fragment_kitap.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/fragment_kitaphana.xml" value="0.38671875" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/fragment_login.xml" value="0.264" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/fragment_oqu_progress.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/fragment_profile.xml" value="0.25987406983400113" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/fragment_rating.xml" value="0.4" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/fragment_rating_table.xml" value="0.128" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/fragment_settings.xml" value="0.11499493414387031" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/fragment_type_of_users.xml" value="0.21770833333333334" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/fragment_user_settings.xml" value="0.2" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/fragment_zharystar.xml" value="0.264" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/fragment_zharystar_list.xml" value="0.1" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/item_action.xml" value="0.4" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/item_action_book.xml" value="0.4" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/item_article.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/item_book.xml" value="0.1" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/item_book_last_opened.xml" value="0.1" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/item_calendar_cell.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/item_daily_progress.xml" value="0.4342560553633218" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/item_editor_choice.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/item_finished_books.xml" value="0.21770833333333334" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/item_follower.xml" value="0.2078125" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/item_load_state_footer_view.xml" value="0.1585144927536232" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/item_parent_kitaphana.xml" value="0.536" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/item_quotation.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/item_readers.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/item_statistic.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/item_story.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/item_type_of_user.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/item_user.xml" value="0.22644927536231885" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/item_vertical_book.xml" value="0.1585144927536232" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/item_weekly_progress.xml" value="0.31204819277108437" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/item_zhetistik.xml" value="0.2140625" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/kitap_fragment.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/layout_posts_container.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/layout_stories_container.xml" value="0.1" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/layout/week_names.xml" value="0.1" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.13177083333333334" />
+        <entry key="..\:/Users/Abdulla/StudioProjects/Kitapp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.22962962962962963" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/background_edittext.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/background_tab_layout_text.xml" value="0.15" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/background_tab_layout_text_default.xml" value="0.15" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/background_tab_layout_text_selected.xml" value="0.15" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/button_background_blue.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/button_background_blue_default.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/button_background_pressed.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/circular.xml" value="0.23378378378378378" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/circular_bordershape.xml" value="0.151171875" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/ic_arrow_back.xml" value="0.107421875" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/ic_first_place.xml" value="0.21458333333333332" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/ic_home.xml" value="0.137109375" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/ic_kitaphana.xml" value="0.137109375" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/ic_person_image.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/ic_profile_follow_with_backg.xml" value="0.23378378378378378" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/ic_profile_followed_with_backg.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/ic_resource_first_place.xml" value="0.13513513513513514" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/progress_bar_background.xml" value="0.119140625" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/splash.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/font/montserrat.xml" value="0.109375" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/activity_main.xml" value="0.152" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/activity_splash.xml" value="0.44509232264334303" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_followers_list.xml" value="0.13513513513513514" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_kitaphana.xml" value="0.2" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_login.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_profile.xml" value="0.136" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_rating.xml" value="0.152" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_rating_table.xml" value="0.2" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_reader.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_search.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_settings.xml" value="0.152" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_zharistar_list.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_zharystar.xml" value="0.152" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_zharystar_list.xml" value="0.2" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_zhetistikter.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/item_action.xml" value="0.190625" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/item_action_book.xml" value="0.190625" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/item_child_kitaphana.xml" value="0.10703125" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/item_folower.xml" value="0.4" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/item_parent_kitaphana.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/item_readers.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/item_readers_image.xml" value="0.4" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/item_story.xml" value="0.125" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/item_user_reader.xml" value="0.4" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/item_zhetistik.xml" value="0.4" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/layout/kitap_fragment.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Kitapp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/Zhamshid Irisbayev/Documents/Diploma/LeetRead/app/src/main/res/layout/activity_splash.xml" value="0.264" />
+        <entry key="..\:/Users/Zhamshid Irisbayev/Documents/Diploma/LeetRead/app/src/main/res/layout/fragment_all_books.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Zhamshid Irisbayev/Documents/Diploma/LeetRead/app/src/main/res/layout/fragment_login.xml" value="0.23596014492753623" />
+        <entry key="..\:/Users/Zhamshid Irisbayev/Documents/Diploma/LeetRead/app/src/main/res/layout/fragment_type_of_users.xml" value="0.23596014492753623" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/background_edittext.xml" value="0.13544303797468354" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/bottom_navigation_item_background_color.xml" value="0.1574074074074074" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/button_background_blue.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/button_background_blue_default.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/button_background_blue_pressed.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/circular_bordershape.xml" value="0.1" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/divider.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/ic_back.xml" value="0.1296875" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/ic_book.xml" value="0.20464135021097046" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/ic_eye.xml" value="0.20464135021097046" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/drawable/round_for_day_cell.xml" value="0.13544303797468354" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/font/montserrat.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/activity_login.xml" value="0.11499493414387031" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/activity_main.xml" value="0.11499493414387031" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/activity_splash.xml" value="0.11499493414387031" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_home.xml" value="0.3131170662905501" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_kitap.xml" value="0.191025641025641" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_kitaphana.xml" value="0.191025641025641" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_login.xml" value="0.1" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_oqu_progress.xml" value="0.19401709401709402" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_profile.xml" value="0.11499493414387031" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_rating.xml" value="0.14583333333333334" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_rating_table.xml" value="0.11197916666666667" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_reader.xml" value="0.19401709401709402" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_search.xml" value="0.11354166666666667" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_zharystar.xml" value="0.152" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/fragment_zharystar_list.xml" value="0.307475317348378" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/item_action.xml" value="0.43105446118192353" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/item_action_book.xml" value="0.366306027820711" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/item_article.xml" value="0.536" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/item_book.xml" value="0.19401709401709402" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/item_book_last_opened.xml" value="0.1" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/item_calendar_cell.xml" value="0.3948339483394834" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/item_child_kitaphana.xml" value="0.2729591836734694" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/item_editor_choice.xml" value="0.19401709401709402" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/item_follower.xml" value="0.1" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/item_parent_kitaphana.xml" value="0.1" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/item_quotation.xml" value="0.1" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/item_readers.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/item_story.xml" value="0.13677536231884058" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/item_user_reader.xml" value="0.21331521739130435" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/kitap_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/layout_posts_container.xml" value="0.21739130434782608" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/layout_stories_container.xml" value="0.115625" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/single_calendar_cell_layout.xml" value="0.19401709401709402" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/layout/week_names.xml" value="0.19401709401709402" />
+        <entry key="..\:/Users/abill/AndroidStudioProjects/Kitapp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.23645833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

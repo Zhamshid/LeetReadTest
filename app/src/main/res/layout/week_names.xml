@@ -1,0 +1,87 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:id="@+id/week_name"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/grey_text_color"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Дүй"
+        android:textSize="11sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/grey_text_color"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Сей"
+        android:textSize="11sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/grey_text_color"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Сәр"
+        android:textSize="11sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/grey_text_color"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Бей"
+        android:textSize="11sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/grey_text_color"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Жұм"
+        android:textSize="11sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/grey_text_color"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Сен"
+        android:textSize="11sp"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/grey_text_color"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Жек"
+        android:textSize="11sp"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

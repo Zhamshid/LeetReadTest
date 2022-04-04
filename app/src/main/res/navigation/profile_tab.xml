@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_tab"
+    app:startDestination="@id/profile_fragment">
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="kz.nrgteam.leetread.ui.profile.ProfileFragment"
+        android:label="Profile Fragment"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profile_fragment_to_zhetistikterFragment"
+            app:destination="@id/zhetistikter_fragment" />
+
+        <action
+            android:id="@+id/action_profile_fragment_to_followers_fragment"
+            app:destination="@+id/followers_fragment">
+
+        </action>
+        <argument
+            android:name="userID"
+            app:argType="integer" />
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="kz.nrgteam://profile/{userID}" />
+        <action
+            android:id="@+id/action_profile_fragment_to_oqu_progress_fragment"
+            app:destination="@id/oqu_progress_fragment" />
+        <action
+            android:id="@+id/action_profile_fragment_to_user_settings_fragment"
+            app:destination="@id/user_settings_fragment" />
+        <action
+            android:id="@+id/action_profile_fragment_to_settings_fragment"
+            app:destination="@id/settings_fragment" />
+        <action
+            android:id="@+id/action_profile_fragment_to_allBooksFragment"
+            app:destination="@id/allBooksFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profile_fragment2"
+        android:name="kz.nrgteam.leetread.ui.profile.ProfileFragment"
+        android:label="Profile Fragment"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profile_fragment_to_zhetistikterFragment"
+            app:destination="@id/zhetistikter_fragment" />
+
+        <action
+            android:id="@+id/action_profile_fragment_to_followers_fragment"
+            app:destination="@+id/followers_fragment">
+            <argument
+                android:name="isFollowers"
+                android:defaultValue="false"
+                app:argType="boolean" />
+
+        </action>
+        <argument
+            android:name="userID"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_profile_fragment_to_oqu_progress_fragment"
+            app:destination="@id/oqu_progress_fragment" />
+        <action
+            android:id="@+id/action_profile_fragment_to_user_settings_fragment"
+            app:destination="@id/user_settings_fragment" />
+        <action
+            android:id="@+id/action_profile_fragment_to_settings_fragment"
+            app:destination="@id/settings_fragment" />
+        <action
+            android:id="@+id/action_profile_fragment_to_allBooksFragment"
+            app:destination="@id/allBooksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/zhetistikter_fragment"
+        android:name="kz.nrgteam.leetread.ui.zhetistikter.ZhetistikterFragment"
+        android:label="ZhetistikterFragment"
+        tools:layout="@layout/fragment_zhetistikter">
+        <action
+            android:id="@+id/action_zhetistikter_fragment_to_oqu_progress_fragment"
+            app:destination="@id/oqu_progress_fragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/followers_fragment"
+        android:name="kz.nrgteam.leetread.ui.followers_list.FollowersFragment"
+        android:label="FollowersFragment"
+        tools:layout="@layout/fragment_followers_list">
+        <argument
+            android:name="isFollowers"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <argument
+            android:name="userId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_followers_fragment_to_profile_fragment2"
+            app:destination="@id/profile_fragment2" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/oqu_progress_fragment"
+        android:name="kz.nrgteam.leetread.ui.oqu_progress.OquProgressFragment"
+        android:label="OquProgressFragment"
+        tools:layout="@layout/fragment_oqu_progress" />
+    <fragment
+        android:id="@+id/user_settings_fragment"
+        android:name="kz.nrgteam.leetread.ui.settings.UserSettingsFragment"
+        android:label="UserSettingsFragment" >
+        <argument
+            android:name="user_info"
+            app:argType="kz.nrgteam.leetread.model.UserInfo"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_user_settings_fragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+        <action
+            android:id="@+id/action_user_settings_fragment_to_changeAnnualGoalFragment"
+            app:destination="@id/changeAnnualGoalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settings_fragment"
+        android:name="kz.nrgteam.leetread.ui.settings.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="kz.nrgteam.leetread.ui.settings.password.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/allBooksFragment"
+        android:name="kz.nrgteam.leetread.ui.all_books.AllBooksFragment"
+        android:label="AllBooksFragment" >
+        <argument android:name="all_books_type"
+            app:argType="kz.nrgteam.leetread.ui.all_books.AllBooksOf" />
+        <argument
+            android:name="user_id"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/changeAnnualGoalFragment"
+        android:name="kz.nrgteam.leetread.ui.settings.annual_goal.ChangeAnnualGoalFragment"
+        android:label="ChangeAnnualGoalFragment" >
+        <argument
+            android:name="current_goal"
+            app:argType="integer" />
+    </fragment>
+    <include app:graph="@navigation/kitaphana_tab" />
+
+</navigation>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="black90">#E6000000</color>
+    <color name="black40">#66000000</color>
+    <color name="black80">#80000000</color>
+    <color name="black_login_backr">#B2000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange">#FCA311</color>
+    <color name="orange_darker">#bf6211</color>
+    <color name="grey">#5A5A5A</color>
+    <color name="divider">#60E4E4E4</color>
+    <color name="goodGrey">#8d8d94</color>
+    <color name="primaryColor">#3980FD</color>
+    <color name="primaryDarkColor">#0B44A8</color>
+    <color name="button_pressed">#50005FCC</color>
+    <color name="splash_screen_color">#005FCC</color>
+<!--    <color name="blue_bottom_nav_item_background">#20000000</color>-->
+    <color name="grey_bottom_nav_item">#7B8794</color>
+    <color name="color_itself">#FFFFFF</color>
+    <color name="item_container">#F4F9FC</color>
+    <color name="second_color_itself">#C6C5C5</color>
+    <color name="text_color">#000000</color>
+    <color name="second_text_color">#2E2E2E</color>
+    <color name="title_text_color">#151522</color>
+    <color name="grey_text_color">#9E9EB0</color>
+    <color name="grey_stronger_text_color">#999999</color>
+    <color name="icon_color">#2E2E2E</color>
+    <color name="background_color">#FFFFFF</color>
+    <color name="tab_layout_color_inactive">#757AE5</color>
+    <color name="first_place_color_yellow">#ECC336</color>
+    <color name="second_place_color_grey">#A9A9AB</color>
+    <color name="third_place_color_brown">#E09345</color>
+    <color name="grey_line_color">#96E4E4E4</color>
+    <color name="grey_quotation">#c4c4c4</color>
+    <color name="green_color">#61B45D</color>
+    <color name="grey_item_background">#F6FAFD</color>
+    <color name="grey_item_background_dark">#C3CFED</color>
+    <color name="red">#DB5555</color>
+    <color name="primary_light">#EFF5FF</color>
+    <color name="primary_light_selected">#CCDBF4</color>
+</resources>

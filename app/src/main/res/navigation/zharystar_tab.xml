@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/zharystar_tab"
+    app:startDestination="@id/zharystar_fragment">
+
+    <fragment
+        android:id="@+id/zharystar_fragment"
+        android:name="kz.nrgteam.leetread.ui.zharystar.ZharystarFragment"
+        tools:layout="@layout/fragment_zharystar">
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="kz.nrgteam://zharystar" />
+
+        <action
+            android:id="@+id/to_zharystar_list_fragment"
+            app:destination="@id/zharystar_list_fragment">
+
+            <argument
+                android:name="zharystar_timing"
+                app:argType="integer"/>
+
+        </action>
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/zharystar_list_fragment"
+        android:name="kz.nrgteam.leetread.ui.zharystarList.ZharystarListFragment"
+        tools:layout="@layout/fragment_zharystar_list">
+
+        <argument
+            android:name="zharystar_timing"
+            app:argType="integer"/>
+        <action
+            android:id="@+id/action_zharystar_list_fragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="kz.nrgteam.leetread.ui.profile.ProfileFragment"
+        android:label="ProfileFragment" >
+        <argument
+            android:name="userID"
+            app:argType="integer" />
+    </fragment>
+</navigation>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="black90">#E6000000</color>
+    <color name="black40">#66000000</color>
+    <color name="black80">#80000000</color>
+    <color name="black_login_backr">#B2000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange">#FCA311</color>
+    <color name="orange_darker">#bf6211</color>
+    <color name="grey">#848484</color>
+    <color name="goodGrey">#8d8d94</color>
+    <color name="grey_bottom_nav_item">#7B8794</color>
+    <color name="color_itself">#000000</color>
+    <color name="text_color">#FFFFFF</color>
+    <color name="second_text_color">#D6D6D6</color>
+    <color name="icon_color">#C0C0C0</color>
+    <color name="background_color">#35343D</color>
+    <color name="primaryColor">#005FCC</color>
+
+    <color name="splash_screen_color">#ffffff</color>
+</resources>

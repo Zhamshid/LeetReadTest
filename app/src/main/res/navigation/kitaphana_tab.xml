@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kitaphana_tab"
+    app:startDestination="@id/kitaphana_fragment">
+
+    <fragment
+        android:id="@+id/kitaphana_fragment"
+        android:name="kz.nrgteam.leetread.ui.kitaphana.KitaphanaFragment"
+        tools:layout="@layout/fragment_kitaphana">
+        <action
+            android:id="@+id/action_kitaphana_fragment_to_kitapFragment2"
+            app:destination="@id/kitap_fragment" />
+        <action
+            android:id="@+id/action_kitaphana_fragment_to_reader_fragment2"
+            app:destination="@id/reader_fragment" />
+        <action
+            android:id="@+id/action_kitaphana_fragment_to_allBooksFragment"
+            app:destination="@id/allBooksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kitap_fragment"
+        android:name="kz.nrgteam.leetread.ui.kitap.KitapFragment"
+        android:label="kitap_fragment"
+        tools:layout="@layout/fragment_kitap" >
+
+
+        <action
+            android:id="@+id/to_reader_page"
+            app:destination="@+id/reader_fragment"/>
+
+        <argument
+            android:name="book_id"
+            app:argType="integer" />
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="kz.nrgteam://kitaphana/{book_id}" />
+        <action
+            android:id="@+id/action_kitap_fragment_to_changeReadPage"
+            app:destination="@id/changeReadPage" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/reader_fragment"
+        android:name="kz.nrgteam.leetread.ui.reader.ReaderFragment"
+        tools:layout="@layout/fragment_reader">
+
+        <argument
+            android:name="book"
+            app:argType="kz.nrgteam.leetread.dto.kitaphana.Book"/>
+    </fragment>
+    <dialog
+        android:id="@+id/changeReadPage"
+        android:name="kz.nrgteam.leetread.ui.kitap.ChangeReadPageDialogFragment"
+        android:label="ChangeReadPage" >
+        <argument
+            android:name="book"
+            app:argType="kz.nrgteam.leetread.dto.kitaphana.Book" />
+    </dialog>
+    <fragment
+        android:id="@+id/allBooksFragment"
+        android:name="kz.nrgteam.leetread.ui.all_books.AllBooksFragment"
+        android:label="AllBooksFragment" >
+        <argument
+            android:name="all_books_type"
+            app:argType="kz.nrgteam.leetread.ui.all_books.AllBooksOf" />
+    </fragment>
+</navigation>

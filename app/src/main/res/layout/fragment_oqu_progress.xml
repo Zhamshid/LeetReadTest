@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/layout_horizontal_margin">
+
+        <TextView
+            android:id="@+id/calendar_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="Айлық үздіксіз оқу прогресі"
+            android:textColor="@color/text_color"
+            android:textSize="13sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/calendar_month_name_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/calendar_title">
+
+            <TextView
+                android:id="@+id/calendar_first_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:textColor="@color/grey_stronger_text_color"
+                android:textSize="14sp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Ақпан" />
+
+            <TextView
+                android:id="@+id/calendar_second_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="13dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:textColor="@color/primaryColor"
+                android:textSize="20sp"
+                tools:text="Наурыз" />
+
+            <TextView
+                android:id="@+id/calendar_third_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:textColor="@color/grey_stronger_text_color"
+                android:textSize="14sp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Сәуір" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/calendar_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/calendar_month_name_container">
+
+            <include
+                android:id="@+id/week_name"
+                layout="@layout/week_names" />
+
+            <kz.nrgteam.leetread.ui.calendarviewpager.CalendarViewPager
+                android:id="@+id/calendar_month"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="22dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/calendar_progress_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="14dp"
+            android:background="@color/divider"
+            app:layout_constraintTop_toBottomOf="@id/calendar_container" />
+
+        <TextView
+            android:id="@+id/progress_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="Апталық оқылған бет саны"
+            android:textColor="@color/text_color"
+            android:textSize="13sp"
+            app:layout_constraintTop_toBottomOf="@id/calendar_progress_divider" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/daily_progress_rv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:clipToPadding="false"
+            android:paddingTop="18dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/progress_title" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

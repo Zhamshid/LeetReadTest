@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/zharystar_layout_daily"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/zharystar_layout_horizontal_margin"
+        android:layout_marginTop="@dimen/layout_vertical_margin"
+        android:layout_marginBottom="@dimen/layout_vertical_margin"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toTopOf="@id/zharystar_layout_weekly"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_background_blue"
+            android:paddingHorizontal="@dimen/layout_horizontal_margin">
+
+            <TextView
+                android:id="@+id/header_text_daily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:lines="1"
+                android:text="@string/daily"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.2"
+                tools:ignore="HardcodedText" />
+
+<!--            app:layout_constraintBottom_toTopOf="@id/date_text_daily"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+            <TextView
+                android:id="@+id/date_text_daily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:lines="1"
+                android:text="15.06.2021-16.06.2021"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@id/rating_daily"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/header_text_daily"
+                app:layout_constraintVertical_bias="0.1"
+                tools:ignore="HardcodedText" />
+
+
+            <LinearLayout
+                android:id="@+id/rating_daily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@id/ex_winners_title_day"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/date_text_daily"
+                app:layout_constraintVertical_bias="0.1">
+
+
+                <TextView
+                    android:id="@+id/first_place_person_daily"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:lines="1"
+                    tools:text="1. Омархан Бабахан  - 3251"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:drawableStartCompat="@drawable/ic_resource_first_place"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/your_place_daily"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:lines="1"
+                    android:text="43. Олжас Оқас  - 721"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:drawableStartCompat="@drawable/ic_resource_arrow_upward_green"
+                    tools:ignore="HardcodedText" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/daily_arrow_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_right"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.45"
+                app:tint="@color/white"
+                tools:ignore="ContentDescription" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/readers_recyclerview_daily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="@+id/header_text_daily"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/header_text_daily"
+                app:layout_constraintVertical_bias="0.8"
+                tools:itemCount="3"
+                tools:listitem="@layout/item_user_reader" />
+
+            <TextView
+                android:id="@+id/ex_winners_title_day"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:lines="1"
+                android:text="Алдыңғы күнгі жеңімпаздар"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@id/ex_winners_recyclerview_day"
+                app:layout_constraintEnd_toStartOf="@id/daily_arrow_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rating_daily"
+                tools:ignore="HardcodedText" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ex_winners_recyclerview_day"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/daily_arrow_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ex_winners_title_day"
+                tools:itemCount="3"
+                tools:listitem="@layout/item_user" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/zharystar_layout_weekly"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/zharystar_layout_horizontal_margin"
+        android:layout_marginBottom="@dimen/layout_vertical_margin"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toTopOf="@id/zharystar_layout_monthly"
+        app:layout_constraintTop_toBottomOf="@id/zharystar_layout_daily">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_background_blue"
+            android:paddingHorizontal="@dimen/layout_horizontal_margin">
+
+            <TextView
+                android:id="@+id/header_text_weekly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:lines="1"
+                android:text="@string/weekly"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.2"
+                tools:ignore="HardcodedText" />
+
+<!--            app:layout_constraintBottom_toTopOf="@id/date_text_weekly"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+
+            <TextView
+                android:id="@+id/date_text_weekly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:lines="1"
+                android:text="15.06.2021-16.06.2021"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@id/rating_weekly"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/header_text_weekly"
+                app:layout_constraintVertical_bias="0.1"
+                tools:ignore="HardcodedText"
+                />
+<!--            app:layout_constraintBottom_toTopOf="@id/rating_weekly"-->
+<!--            app:layout_constraintBottom_toTopOf="@id/rating_weekly"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/header_text_weekly"-->
+<!--            -->
+
+
+            <LinearLayout
+                android:id="@+id/rating_weekly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@id/ex_winners_title_week"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/date_text_weekly"
+                app:layout_constraintVertical_bias="0.1">
+
+
+                <TextView
+                    android:id="@+id/first_place_person_weekly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:lines="1"
+                    android:text="1. Омархан Бабахан  - 3251"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:drawableStartCompat="@drawable/ic_resource_first_place"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/your_place_weekly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:lines="1"
+                    android:text="43. Олжас Оқас  - 721"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:drawableStartCompat="@drawable/ic_resource_arrow_upward_green"
+                    tools:ignore="HardcodedText" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/weekly_arrow_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_right"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.45"
+                app:tint="@color/white"
+                tools:ignore="ContentDescription" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/readers_recyclerview_weekly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="@+id/header_text_weekly"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/header_text_weekly"
+                app:layout_constraintVertical_bias="0.8"
+                tools:itemCount="3"
+                tools:listitem="@layout/item_user_reader" />
+
+            <TextView
+                android:id="@+id/ex_winners_title_week"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:lines="1"
+                android:text="Алдыңғы күнгі жеңімпаздар"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@id/ex_winners_recyclerview_week"
+                app:layout_constraintEnd_toStartOf="@id/weekly_arrow_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rating_weekly"
+                tools:ignore="HardcodedText" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ex_winners_recyclerview_week"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/weekly_arrow_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ex_winners_title_week"
+                tools:itemCount="3"
+                android:visibility="gone"
+                tools:listitem="@layout/item_user" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/zharystar_layout_monthly"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/zharystar_layout_horizontal_margin"
+        android:layout_marginBottom="@dimen/layout_vertical_margin"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/zharystar_layout_weekly">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_background_blue"
+            android:paddingHorizontal="@dimen/layout_horizontal_margin">
+
+            <TextView
+                android:id="@+id/header_text_monthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:lines="1"
+                android:text="@string/monthly"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.2"
+                tools:ignore="HardcodedText" />
+<!--            app:layout_constraintBottom_toTopOf="@id/date_text_monthly"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+            <TextView
+                android:id="@+id/date_text_monthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:lines="1"
+                android:text="15.06.2021-16.06.2021"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@id/rating_monthly"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/header_text_monthly"
+                app:layout_constraintVertical_bias="0.1"
+                tools:ignore="HardcodedText" />
+
+
+            <LinearLayout
+                android:id="@+id/rating_monthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@id/ex_winners_title_month"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/date_text_monthly"
+                app:layout_constraintVertical_bias="0.1">
+
+
+                <TextView
+                    android:id="@+id/first_place_person_monthly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:lines="1"
+                    android:text="1. Омархан Бабахан  - 3251"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:drawableStartCompat="@drawable/ic_resource_first_place"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/your_place_monthly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:lines="1"
+                    android:text="43. Олжас Оқас  - 721"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:drawableStartCompat="@drawable/ic_resource_arrow_upward_green"
+                    tools:ignore="HardcodedText" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/monthly_arrow_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_right"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.45"
+                app:tint="@color/white"
+                tools:ignore="ContentDescription" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/readers_recyclerview_monthly"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="@+id/header_text_monthly"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/header_text_monthly"
+                app:layout_constraintVertical_bias="0.8"
+                tools:itemCount="3"
+                tools:listitem="@layout/item_user_reader" />
+
+            <TextView
+                android:id="@+id/ex_winners_title_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:lines="1"
+                android:text="Алдыңғы күнгі жеңімпаздар"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@id/ex_winners_recyclerview_month"
+                app:layout_constraintEnd_toStartOf="@id/monthly_arrow_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rating_monthly"
+                tools:ignore="HardcodedText" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ex_winners_recyclerview_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/monthly_arrow_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ex_winners_title_month"
+                tools:itemCount="3"
+                android:visibility="gone"
+                tools:listitem="@layout/item_user" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
